@@ -1,0 +1,357 @@
+
+h1{
+    color: DarkGreen;
+    font-family: cursive;
+    text-align: center;
+}
+
+nav li{
+	display: inline;
+
+}
+nav {
+    text-align: center;
+    font-weight: lighter;
+    
+    /*border: 2px solid #12650b;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;*/
+
+}
+
+nav ul li a {
+    display: inline;
+    opacity: 0.5;
+    border: 2px solid #c4d9c2;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 5px 10px
+}
+
+
+nav ul li a.current,
+nav ul li a:hover {
+	opacity: 1;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    background-color: #044114;
+    color: white;
+  }
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: #044114;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;*/
+}
+
+.text1 {
+    font-family:'Courier New', monospace;
+    text-align: justify;
+}
+.text2 {
+    font-family:'Courier New', monospace;
+    text-align: justify;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    font-family: cursive;
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #b7dcb9;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #ffffff;}
+  .container3 {
+    position: relative;
+    text-align: center;
+    color: White
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+  }
+  .season {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;*/
+    
+}
+.rainy{
+    text-align: center;
+}
+.dry{
+    text-align: center;
+}
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-300px)
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInDown{
+    from {
+        transform: translateY(-300px)
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.question1 {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes example {
+    from {background-color: gray;}
+    to {background-color: rgb(148,185,150);}
+  }
+
+
+
+
+.best_time {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation-name: slideInDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+  }
+
+
+.centered1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+@keyframes forthes {
+    0%   {color: rgb(148,185,150);}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
+
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.intro1{
+    animation-name: bounce ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+
+
+.plan {
+  display: flex;
+  gap: 10px; /* optional spacing between images */
+  flex-wrap: nowrap; /* don't wrap to next line */
+  overflow-x: auto; /* scroll horizontally on smaller screens */
+}
+
+.plan {
+  display: flex;
+  width: 100%;
+}
+
+.plan > div {
+  flex: 1; /* all images take equal space */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.plan img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*flip photos slayyyy*/
+
+.card {
+  display: inline-block;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+	text-align: center;
+  color: White;
+}
+
+.name_lieu {
+	position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+	text-align: center;
+	
+
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  z-index: 2;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Overlay text on image */
+.card-front {
+  position: relative;
+}
+
+.name_lieu {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-family: cursive;
+  text-shadow: 1px 1px 2px black;
+  pointer-events: none; /* Let hover still work normally */
+}
+
+.card-front img,
+.card-back img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*for the description of plan for each place*/
+
+.container2 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  width: 100%; /* Make it full width */
+  box-sizing: border-box; /* Ensures padding doesn't overflow the container */
+  padding: 0 10px; /* Optional: small horizontal padding */
+  margin: 0 auto; /* Optional: centers the container if there’s a max-width on body */
+}
+
+.scrollbox1, .scrollbox2, .scrollbox3, .scrollbox4 {
+  overflow: auto;
+  width: 100%; /* Now takes full width of its grid cell */
+  max-height: 200px;
+
+  /* Fixed custom property syntax and added fallback background */
+  --g: radial-gradient(55% 20px, #0009, #0000);
+  background:
+    linear-gradient(#fff 10px, #0000 40px, calc(100% - 40px), #fff calc(100% - 10px)) local,
+    var(--g) top / 100% 200%,
+    var(--g) bottom / 100% 200%;
+}
+
